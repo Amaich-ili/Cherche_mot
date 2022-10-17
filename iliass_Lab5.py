@@ -4,27 +4,51 @@ Laboratoire 5
 Session été 2022
 
 """
-list_str = []
-list_number = [0,1,2,3,4,5,6,7,8,9]
-# c = 0
-# while c < 5:
-#     c += 1
-
-def mot():
-    list_number = [0,1,2,3,4,5,6,7,8,9]
-    mot = input("Saisir un mot : ")
-    for lettre in mot :
+def verifier_mot(mot):
+    list_number = ["0","1","2","3","4","5","6","7","8","9"]
+    for lettre in mot:
         if lettre in list_number:
-            return False
-    return mot
+            return True
 
-c = 0
-while c < 5:
-    if mot():
-        list_str.append(mot())
-    c += 1
-print(list_str)
-   
+def list_mot():
+    list_mot = []
+    list_number = ["0","1","2","3","4","5","6","7","8","9"]
+    sortir = False
+    while not sortir:
+        try:
+            mot = input("Saisir un mot : ")
+            if verifier_mot(mot):
+                raise Exception
+
+        except:
+            sortir = True
+
+        else:
+            list_mot.append(mot)
+    print(list_mot)
+    
+    return list_mot
+# list_mot()
+
+def recherche_mot():
+    ma_liste_mot = list_mot()
+    sortir = False
+    while not sortir:
+        try:
+            inpute = input("Saisir un mot present dans la liste: ")
+            if inpute not in ma_liste_mot:
+                    raise Exception
+
+        except:
+            print("Le mot saisi n'est pas dans la liste !!")
+
+        else:
+            # je doit ajouter le comteur ici
+            sortir = True
+    
+    
+    return inpute
+recherche_mot()
 
 
 
