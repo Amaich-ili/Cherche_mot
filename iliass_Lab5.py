@@ -4,9 +4,9 @@ Laboratoire 5
 Session été 2022
 
 """
-from msvcrt import kbhit
+
 from random import randint
-from re import T
+
 def verifier_mot(mot):
     for lettre in mot:
         if lettre.isdigit():
