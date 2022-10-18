@@ -15,7 +15,6 @@ def verifier_mot(mot):
 
 def list_mot():
     list_mot = []
-    list_number = ["0","1","2","3","4","5","6","7","8","9"]
     sortir = False
     while not sortir:
         try:
@@ -34,22 +33,7 @@ def recherche_recur(inpute, ma_liste_mot):
     if mot_index != inpute:
         return 1+ recherche_recur(inpute, ma_liste_mot)
     else :
-        return 0
-    # return mot_index
-
-
-# def recursif(inpute):
-#     liste =list_mot()
-#     mot =  recherche_recur(liste)
-#     if mot != inpute:
-#         return 1+ recursif(inpute)
-#     else :
-#         return 0
-
-
-
-# recherche_recur()
-
+        return 1
 
 def recherche_mot():
     ma_liste_mot = list_mot()
@@ -69,38 +53,4 @@ def recherche_mot():
     
 
 recherche_mot()
-
-
-# sortir = False
-# compte = 0
-# while not sortir:
-#     index = randint(0, len(ma_liste_mot)-1)
-#     mot_index = ma_liste_mot[index]
-    
-#     print(mot_index)
-#     try:
-#         if mot_index != inpute:
-#             ma_liste_mot.pop(index)
-#             compte+=1
-#     except:
-#         pass
-
-#     else :
-#         print(compte)
-#         sortir = True 
-
-
-# list =["a","b","v","h","","5","6","7","8","9"]
-# def myst(l: list) -> int:
-#     if l==[]:
-#         return 0
-#     else:          
-#         l.pop(0)          # suppression du premier terme de la liste l
-#         return 1+myst(l)
-
-# print(myst(list))
-        
-
-
-
 
