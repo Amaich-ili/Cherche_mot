@@ -6,7 +6,7 @@ Un algorithme qui demande a l'untilisateur de saisir un mot, ajouter un une list
 ## Utilisation
 
 Étape 1:
-un algorithme offrant un menu à un utilisateur lui permettant d'entrer plusieurs mots, un seul à la fois, tant et aussi longtemps que son mot ne contient pas de chiffres en utilisant la gestion d'erreur.
+Un algorithme offrant un menu à un utilisateur lui permettant d'entrer plusieurs mots, un seul à la fois, tant et aussi longtemps que son mot ne contient pas de chiffres en utilisant la gestion d'erreur.
 
 Étape 2:
 On demande à l'utilisateur d'entrer un mot présent dans la liste. Si l'utilisateur entre un mot n'étant pas dans la liste, on affiche un méssage qui indique que le mot n'est dans la liste. 
