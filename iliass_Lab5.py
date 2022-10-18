@@ -27,7 +27,7 @@ def list_mot():
             list_mot.append(mot)
     return list_mot
 
-def recherche_recur(inpute, ma_liste_mot):
+def recherche_mot(inpute, ma_liste_mot):
     index = randint(0, len(ma_liste_mot)-1)
     mot_index = ma_liste_mot[index]
     if mot_index != inpute:
@@ -35,7 +35,7 @@ def recherche_recur(inpute, ma_liste_mot):
     else :
         return 1
 
-def recherche_mot():
+def compte_recursion():
     ma_liste_mot = list_mot()
     sortir = False
     while not sortir:
