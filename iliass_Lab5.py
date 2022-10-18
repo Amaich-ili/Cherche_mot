@@ -31,7 +31,7 @@ def recherche_mot(inpute, ma_liste_mot):
     index = randint(0, len(ma_liste_mot)-1)
     mot_index = ma_liste_mot[index]
     if mot_index != inpute:
-        return 1+ recherche_recur(inpute, ma_liste_mot)
+        return 1+ recherche_mot(inpute, ma_liste_mot)
     else :
         return 1
 
@@ -48,9 +48,9 @@ def compte_recursion():
             print("Le mot saisi n'est pas dans la liste !!")
 
         else:
-            print(recherche_recur(inpute,ma_liste_mot))
+            print(recherche_mot(inpute,ma_liste_mot))
             sortir = True
     
 
-recherche_mot()
+compte_recursion()
 
