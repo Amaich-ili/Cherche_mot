@@ -1,4 +1,4 @@
-# Algorithme qui cherche un mot dans une liste des mots saisi par l'utilisateur, et affiche le nombre de récursion
+# Algorithme qui cherche un mot dans une liste des mots saisi par récursion
 
 ## Description
 Un algorithme qui demande a l'untilisateur de saisir un mot, ajouter un une liste et compter le nombre de recursion utilisé pour trouver un mot entrer par l'utilisateur.
@@ -20,8 +20,6 @@ Une fois le mot trouvé: on affiche à la console le nombre de récursion ayant 
 ### Support
 Iliass Amaich iliamaich@gmail.com
 
-### Auteurs et Reconnaissances
-Keven Presseau
 
 
 
